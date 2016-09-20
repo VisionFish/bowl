@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div.container
+    div.row(style="height: 50px")
+      div.col-sm-12
+        
+    div.row
+      div.col-sm-1
+      div.col-sm-10
+        +navbar("Project name","dropdown_menu")
+          +nav_item("index.html","active") Home
+          +nav_item("about.html") About
+          +nav_item("contact.html") Contact
+      div.col-sm-1
+    div.row(style="height: 100px")
+      div.col-sm-12
+    div.row
+      div.col-sm-4
+      div.col-sm-4
+        +panel-primary("Primary Panel")
+          +input("text","txtName","User Name","")
+          +input("text","txtName","Password","")
+          +icon-btn("sunglasses")
+      div.col-sm-4
